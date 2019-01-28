@@ -12,12 +12,11 @@
 */
 #include "stopwatch.h"
 
+double startTime;
+double endTime;
+
 void start_stopwatch(){
-
-}
-
-static void long_taking_function(){
-
+    begin = clock();
 }
 
 void stop_stopwatch(){
