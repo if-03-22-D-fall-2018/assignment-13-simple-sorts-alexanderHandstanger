@@ -13,6 +13,14 @@
 #ifndef ___STOPWATCH_H
 #define ___STOPWATCH_H
 
+void start_stopwatch();
+
+static void long_taking_function();
+
+void stop_stopwatch();
+
+double elapsed_time();
+
 /**
 *** @file stopwatch.h
 *** @brief Description of stopwatch

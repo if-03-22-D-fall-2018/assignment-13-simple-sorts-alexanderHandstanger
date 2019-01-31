@@ -15,14 +15,16 @@
 #include <stdlib.h>
 
 
-void init_random(int small_array[], void* SMALL){
+void init_random(int *array, unsigned long length){
+  srandom(time(NULL));
+	for (unsigned long i = 0; i < length; i++)
+		array[i] = random();
+}
+
+void bubble_sort(int *array, unsigned long length){
 
 }
 
-void bubble_sort(int small_array[], void* SMALL){
-
-}
-
-void insertion_sort(int small_array[], void* SMALL){
+void insertion_sort(int *array, unsigned long length){
 
 }

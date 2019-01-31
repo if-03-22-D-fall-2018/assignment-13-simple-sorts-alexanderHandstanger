@@ -10,3 +10,20 @@
  * <your description here>
  *-----------------------------------------------------------------------------
 */
+#include "stopwatch.h"
+
+void start_stopwatch(){
+
+}
+
+static void long_taking_function(){
+
+}
+
+void stop_stopwatch(){
+
+}
+
+double elapsed_time(){
+  return 0;
+}
