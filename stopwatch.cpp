@@ -24,5 +24,8 @@ void stop_stopwatch(){
 }
 
 double elapsed_time(){
+  if(endTime < startTime){
+    return (clock() - startTime) / CLOCKS_PER_SEC;
+  }
   return (endTime - startTime) / CLOCKS_PER_SEC;
 }

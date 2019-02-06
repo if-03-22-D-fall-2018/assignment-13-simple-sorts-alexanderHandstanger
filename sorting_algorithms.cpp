@@ -22,9 +22,29 @@ void init_random(int *array, unsigned long length){
 }
 
 void bubble_sort(int *array, unsigned long length){
-
+  bool isSwapped = false;
+  do{
+    isSwapped = false;
+    for(unsigned long i = 0; i < length-1; i++){
+      if(array[i] > array[i+1]){
+        int temp = array[i];
+        array[i] = array[i + 1];
+        array[i + 1] = temp;
+        isSwapped = true;
+      }
+    }
+  }while(isSwapped);
 }
 
 void insertion_sort(int *array, unsigned long length){
-
+  int temp;
+  for (int i = 0; i < length; i++) {
+    temp = i;
+    while(temp > 0 && array[temp - 1] > array[temp]){
+      int temp2 = array[i];
+      array[i] = array[i - 1];
+      array[i + 1] = temp2;
+      temp--;
+    }
+  }
 }
