@@ -16,13 +16,13 @@ double startTime;
 double endTime;
 
 void start_stopwatch(){
-    begin = clock();
+  startTime = clock();
 }
 
 void stop_stopwatch(){
-
+  endTime = clock();
 }
 
 double elapsed_time(){
-  return 0;
+  return (endTime - startTime) / CLOCKS_PER_SEC;
 }
